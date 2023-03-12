@@ -1,0 +1,39 @@
+POST http://localhost:3000/students/create HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Tom",
+    "lastName": "Cat",
+    "classe": "formIV",
+    "gender": "M",
+    "dateOfBirth": "12/03/2903"
+}
+
+###
+
+GET http://localhost:3000/students
+
+###
+
+PATCH http://localhost:3000/students/640a1a83c24899e6878e01a4
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Cat",
+    "classe": "formIV",
+    "gender": "M",
+    "dateOfBirth": "12/03/2903"
+}
+
+###
+DELETE http://localhost:3000/students/640a1a89c24899e6878e01a6
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Cat",
+    "classe": "formIV",
+    "gender": "M",
+    "dateOfBirth": "12/03/2903"
+}
